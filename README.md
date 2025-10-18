@@ -47,3 +47,33 @@ chcp 65001 ; .\arraySetTests
 ### Estrutura de Arquivos
 
 O projeto é composto por três arquivos principais:
+
+├── Conjunto.hpp # Declaração (Interface) da classe Conjunto ├── Conjunto.cpp # Implementação dos métodos da classe └── main.cpp # Contém a função main() e os testes (testInsert, testRemove)
+
+### 1. Compilação (Build)
+
+É necessário compilar e ligar todos os arquivos `.cpp` juntos para criar o executável:
+
+```bash
+g++ main.cpp Conjunto.cpp -o ArraySetTests
+O comando cria um arquivo executável chamado ArraySetTests.
+
+2. Execução dos Testes
+O executável rodará a suíte de testes (testInsert e testRemove) que verifica a integridade da classe.
+
+.\ArraySetTests
+
+Saída Esperada:
+Se todos os testes passarem (o que significa que a lógica do add e remove está correta), você verá a seguinte saída:
+
+Begin - Test_Insert.
+... [Mensagens detalhadas de inserção] ...
+End - Test_Insert.
+Begin - Test_Remove.
+... [Mensagens detalhadas de remoção] ...
+End - Test_Remove.
+
+End of all tests.
+
+👥 Autor
+Rafael de Moura Cassiano Silva
